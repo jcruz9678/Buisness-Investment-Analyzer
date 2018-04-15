@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="769.0" prefWidth="1236.0" style="-fx-background-color: #341961;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.Controller">
+    <children>
+        <Pane layoutX="9.0" layoutY="8.0" prefHeight="753.0" prefWidth="1219.0" style="-fx-background-color: #101010;">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+            <children>
+                <JFXButton buttonType="RAISED" layoutX="1116.0" layoutY="38.0" ripplerFill="#502796" text="Log Out" textFill="#5e5e5e">
+                    <font>
+                        <Font name="Franklin Gothic Medium" size="14.0" />
+                    </font>
+                </JFXButton>
+                <GridPane layoutX="171.0" layoutY="102.0" prefHeight="396.0" prefWidth="288.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <JFXTextField editable="false" focusColor="#ededed" />
+                        <JFXTextField editable="false" focusColor="#ededed" GridPane.rowIndex="1" />
+                  <JFXTextField editable="false" focusColor="#ededed" GridPane.rowIndex="3" />
+                  <JFXTextField editable="false" focusColor="#ededed" GridPane.rowIndex="5" />
+                  <JFXTextField editable="false" focusColor="#ededed" GridPane.rowIndex="2" />
+                  <JFXTextField editable="false" focusColor="#ededed" GridPane.rowIndex="4" />
+                    </children>
+                </GridPane>
+                <GridPane layoutX="46.0" layoutY="102.0" prefHeight="384.0" prefWidth="184.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="115.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="142.0" minHeight="0.0" prefHeight="71.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="168.0" minHeight="0.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="160.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="160.0" minHeight="10.0" prefHeight="94.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="160.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label text="Cash &#10;Flow(Monthly)&#10;" textFill="#5e5e5e">
+                            <font>
+                                <Font name="Franklin Gothic Medium" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label text="Cash&#10;Flow(Yearly)" textFill="#5e5e5e" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="Franklin Gothic Medium" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label text="Cap&#10;Rate" textFill="#5e5e5e" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="Franklin Gothic Medium" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label text="Cash on Cash&#10;Return" textFill="#5e5e5e" GridPane.rowIndex="3">
+                            <font>
+                                <Font name="Franklin Gothic Medium" size="14.0" />
+                            </font>
+                        </Label>
+                  <Label text="Total ROI" textFill="#5e5e5e" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Net Operating&#10;Income" textFill="#5e5e5e" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="14.0" />
+                     </font>
+                  </Label>
+                    </children>
+                </GridPane>
+            <JFXButton buttonType="RAISED" layoutX="518.0" layoutY="697.0" ripplerFill="#502796" text="Save Profile" textFill="#5e5e5e">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="630.0" layoutY="697.0" ripplerFill="#502796" text="Back to Input" textFill="#5e5e5e">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font>
+            </JFXButton>
+            <GridPane layoutX="792.0" layoutY="395.0" prefHeight="246.0" prefWidth="373.0">
+               <children>
+                  <JFXTextField editable="false" focusColor="#ededed" />
+                  <JFXTextField editable="false" focusColor="#ededed" GridPane.rowIndex="1" />
+                  <JFXTextField editable="false" focusColor="#ededed" GridPane.rowIndex="2" />
+                  <JFXTextField editable="false" focusColor="#ededed" GridPane.rowIndex="3" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="142.0" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="98.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane layoutX="680.0" layoutY="395.0" prefHeight="246.0" prefWidth="121.0">
+               <children>
+                  <Label text="Monthly&#10;Interest Rate" textFill="#5e5e5e">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Lifetime Interest&#10;Compound" textFill="#5e5e5e" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Multiplier" textFill="#5e5e5e" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Total Monthly&#10;Mortgage" textFill="#5e5e5e" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="115.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="142.0" minHeight="0.0" prefHeight="62.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="168.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="160.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            </children>
+        </Pane>
+        <GridPane layoutX="795.0" layoutY="112.0" prefHeight="246.0" prefWidth="373.0">
+            <children>
+                <JFXTextField editable="false" focusColor="#ededed" />
+                <JFXTextField editable="false" focusColor="#ededed" GridPane.rowIndex="1" />
+                <JFXTextField editable="false" focusColor="#ededed" GridPane.rowIndex="2" />
+            <JFXTextField editable="false" focusColor="#ededed" GridPane.rowIndex="3" />
+            </children>
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="142.0" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="98.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+        </GridPane>
+        <GridPane layoutX="691.0" layoutY="112.0" prefHeight="246.0" prefWidth="121.0">
+            <children>
+                <Label text="Equity&#10;Accrual&#10;" textFill="#5e5e5e">
+                    <font>
+                        <Font name="Franklin Gothic Medium" size="14.0" />
+                    </font>
+                </Label>
+                <Label text="Appreciation" textFill="#5e5e5e" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Franklin Gothic Medium" size="14.0" />
+                    </font>
+                </Label>
+                <Label text="Taxes" textFill="#5e5e5e" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Franklin Gothic Medium" size="14.0" />
+                    </font>
+                </Label>
+                <Label text="Total Return" textFill="#5e5e5e" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Franklin Gothic Medium" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="115.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="142.0" minHeight="0.0" prefHeight="62.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="168.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="160.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+        </GridPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="422.0" prefWidth="595.0" style="-fx-background-color: #341961;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.Controller">
+   <children>
+      <Pane focusTraversable="true" layoutX="9.0" layoutY="8.0" prefHeight="406.0" prefWidth="577.0" style="-fx-background-color: #101010;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="305.0" layoutY="309.0" ripplerFill="#502796" text="Login" textFill="#5e5e5e">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font></JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="361.0" layoutY="309.0" ripplerFill="#502796" text="Cancel" textFill="#5e5e5e">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font></JFXButton>
+            <Label layoutX="133.0" layoutY="229.0" text="Password" textFill="#5e5e5e">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="16.0" />
+               </font></Label>
+            <Label layoutX="291.0" layoutY="365.0" text="Don't have an account?" textFill="#5e5e5e">
+               <font>
+                  <Font name="Franklin Gothic Medium Italic" size="14.0" />
+               </font></Label>
+            <Label layoutX="131.0" layoutY="146.0" text="Username" textFill="#5e5e5e">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="16.0" />
+               </font></Label>
+            <JFXTextField focusColor="#ededed" focusTraversable="false" layoutX="272.0" layoutY="142.0" promptText="Enter Username">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font></JFXTextField>
+            <JFXButton buttonType="RAISED" layoutX="439.0" layoutY="360.0" ripplerFill="#502796" text="Register" textFill="#5e5e5e">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font></JFXButton>
+            <Label layoutX="48.0" layoutY="42.0" prefHeight="52.0" prefWidth="448.0" text="Buisness Investment Analyzer" textFill="#5c5c5c">
+               <font>
+                  <Font name="Arial Bold" size="30.0" />
+               </font>
+            </Label>
+            <JFXPasswordField layoutX="272.0" layoutY="217.0" prefHeight="25.0" prefWidth="148.0" promptText="Enter Password">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font>
+            </JFXPasswordField>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Pane>
+   </children>
+</AnchorPane>

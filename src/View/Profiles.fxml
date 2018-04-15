@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="635.0" prefWidth="567.0" style="-fx-background-color: #341961;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.Controller">
+   <children>
+      <Pane layoutX="6.0" layoutY="8.0" prefHeight="620.0" prefWidth="555.0" style="-fx-background-color: #101010;">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="308.0" layoutY="569.0" prefHeight="26.0" prefWidth="61.0" ripplerFill="#502796" text="Load" textFill="#5e5e5e">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="388.0" layoutY="569.0" prefHeight="26.0" prefWidth="67.0" ripplerFill="#502796" text="Cancel" textFill="#5e5e5e">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font>
+            </JFXButton>
+            <BorderPane layoutX="16.0" layoutY="15.0" prefHeight="533.0" prefWidth="521.0">
+               <center>
+                  <JFXTreeTableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

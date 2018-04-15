@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="370.0" prefWidth="562.0" style="-fx-background-color: #341961;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.Controller">
+   <children>
+      <Pane layoutX="6.0" layoutY="5.0" prefHeight="360.0" prefWidth="551.0" style="-fx-background-color: #101010;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="316.0" layoutY="304.0" prefHeight="31.0" prefWidth="91.0" ripplerFill="#502796" text="Register" textFill="#5e5e5e">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font></JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="417.0" layoutY="307.0" ripplerFill="#502796" text="Cancel" textFill="#5e5e5e">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font></JFXButton>
+            <JFXTextField layoutX="138.0" layoutY="52.0" prefHeight="25.0" prefWidth="333.0">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField layoutX="138.0" layoutY="134.0" prefHeight="25.0" prefWidth="333.0">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField layoutX="138.0" layoutY="210.0" prefHeight="25.0" prefWidth="333.0">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="45.0" layoutY="137.0" text="Password" textFill="#5e5e5e">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="213.0" text="Confim" textFill="#5e5e5e">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="226.0" text="Password" textFill="#5e5e5e">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="55.0" text="Username" textFill="#5e5e5e">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Pane>
+   </children>
+</AnchorPane>
