@@ -16,12 +16,12 @@
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </padding>
          <children>
-            <JFXButton fx:id="loadProfilesButton" buttonType="RAISED" layoutX="308.0" layoutY="569.0" onAction="#loadProfilesButtonAction" prefHeight="26.0" prefWidth="61.0" ripplerFill="#502796" style="-fx-background-color: #9e9b98;" text="Load" textFill="#5e5e5e">
+            <JFXButton fx:id="loadProfilesButton" buttonType="RAISED" layoutX="308.0" layoutY="569.0" onAction="#loadProfilesButtonAction" prefHeight="26.0" prefWidth="61.0" ripplerFill="#502796" text="Load" textFill="#5e5e5e">
                <font>
                   <Font name="Franklin Gothic Medium" size="14.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="cancelProfilesButton" buttonType="RAISED" layoutX="388.0" layoutY="569.0" onAction="#cancelProfilesButtonAction" prefHeight="26.0" prefWidth="67.0" ripplerFill="#502796" style="-fx-background-color: #9e9b98;" text="Cancel" textFill="#5e5e5e">
+            <JFXButton fx:id="cancelProfilesButton" buttonType="RAISED" layoutX="388.0" layoutY="569.0" onAction="#cancelProfilesButtonAction" prefHeight="26.0" prefWidth="67.0" ripplerFill="#502796" text="Cancel" textFill="#5e5e5e">
                <font>
                   <Font name="Franklin Gothic Medium" size="14.0" />
                </font>
