@@ -1,5 +1,7 @@
 package View;
 
+import Entity.UserObject;
+import XMLDomEngine.userStore;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -10,8 +12,11 @@ import javafx.stage.Stage;
 
 import javax.swing.*;
 import java.io.IOException;
+import java.util.List;
 
 public class Controller {
+    //global variable for user
+    private Integer userId;
 
     //Login Page
     public void loginButtonAction(ActionEvent event) {
@@ -25,6 +30,10 @@ public class Controller {
             stage.setScene(new Scene(root, 1236, 769));
             stage.show();
             ((Node)(event.getSource())).getScene().getWindow().hide();
+            //Get the users
+            userStore store = new userStore();
+            List<UserObject> userList = store.getUsers();
+            //Validate before scene change
         }
         catch (IOException e) {
             e.printStackTrace();
@@ -74,6 +83,20 @@ public class Controller {
     public void registerAction(ActionEvent event) {
         //Button was clicked, Register new user
         //TODO addd new user to database/check if user already exists
+        //Get the users
+        userStore store = new userStore();
+        List<UserObject> userList = store.getUsers();
+        //validate that user does not exist by comparing username
+
+        //Create the user object
+        UserObject user = new UserObject();
+        //Assign inputs like user name and password and id to this object
+        user.setId(store.getMaxUserId() + 1);
+        user.setUserName();
+        user.setPassword();
+
+        store.insertUser(user);
+        //Change scene back to Login
     }
 
 
