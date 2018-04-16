@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><Application>
+	<!--User Login Infomration-->
+	<UserLogin>
+	<User id="1"><Username>
+				HeYa
+</Username><Password>
+				Outkast
+</Password></User>
+	<User id="2"><Username>
+				HeYa
+</Username><Password>
+				Outkast
+</Password></User>
+	<User id="3"><Username>
+				HeYa
+</Username><Password>
+				Outkast
+</Password></User>
+	<User id="4"><Username>
+				HeYa
+</Username><Password>
+				Outkast
+</Password></User>
+	</UserLogin>
+	<!--Investment Profile Information-->
+	<Profile>
+		<Input id="1">
+            <UserId>
+                1
+            </UserId>
+            <PropertyAddress>
+                7-9 Church St Foxboro Duplex
+            </PropertyAddress>
+            <TotalPurchasePrice>
+                250000.00
+            </TotalPurchasePrice>
+            <DownPayment>
+                200000.00
+            </DownPayment>
+            <AnticipatedImprovements>
+                0.0
+            </AnticipatedImprovements>
+            <MortgageInterestRate>
+                4.0
+            </MortgageInterestRate>
+            <MortgageLengthYears>
+                30.0
+            </MortgageLengthYears>
+            <MonthlyIncomeRent>
+                2000.00
+            </MonthlyIncomeRent>
+            <VacancyPercent>
+                10.0
+            </VacancyPercent>
+            <AdditionalFees>
+                0.00
+            </AdditionalFees>
+            <PropertyTaxes>
+                4727.00
+            </PropertyTaxes>
+            <InsuranceCost>
+                1500.00
+            </InsuranceCost>
+            <ManagementCost>
+                0.00
+            </ManagementCost>
+            <MaintenanceCost>
+                3000.00
+            </MaintenanceCost>
+            <Advertising>
+                300.00
+            </Advertising>
+            <UtilityCosts>
+                0.00
+            </UtilityCosts>
+            <AppreciationPerYear>
+                2.00
+            </AppreciationPerYear>
+            <AdditionalTaxes>
+                0.00
+            </AdditionalTaxes>
+        </Input>
+	<Input id="2"><UserId>
+				1
+</UserId><PropertyAddress>
+				7-9 Church St Foxboro Duplex
+</PropertyAddress><TotalPurchasePrice>
+				250000.0
+</TotalPurchasePrice><DownPayment>
+				200000.0
+</DownPayment><AnticipatedImprovements>
+				0.0
+</AnticipatedImprovements><MortgageInterestRate>
+				4.0
+</MortgageInterestRate><MortgageLengthYears>
+				30.0
+</MortgageLengthYears><MonthlyIncomeRent>
+				2000.0
+</MonthlyIncomeRent><VacancyPercent>
+				10.0
+</VacancyPercent><AdditionalFees>
+				0.0
+</AdditionalFees><PropertyTaxes>
+				4727.0
+</PropertyTaxes><InsuranceCost>
+				1500.0
+</InsuranceCost><ManagementCost>
+				0.0
+</ManagementCost><MaintenanceCost>
+				3000.0
+</MaintenanceCost><Advertising>
+				300.0
+</Advertising><UtilityCosts>
+				0.0
+</UtilityCosts><AppreciationPerYear>
+				2.0
+</AppreciationPerYear><AdditionalTaxes>
+				0.0
+</AdditionalTaxes></Input>
+	<Input id="3"><UserId>
+				1
+</UserId><PropertyAddress>
+				7-9 Church St Foxboro Duplex
+</PropertyAddress><TotalPurchasePrice>
+				250000.0
+</TotalPurchasePrice><DownPayment>
+				200000.0
+</DownPayment><AnticipatedImprovements>
+				0.0
+</AnticipatedImprovements><MortgageInterestRate>
+				4.0
+</MortgageInterestRate><MortgageLengthYears>
+				30.0
+</MortgageLengthYears><MonthlyIncomeRent>
+				2000.0
+</MonthlyIncomeRent><VacancyPercent>
+				10.0
+</VacancyPercent><AdditionalFees>
+				0.0
+</AdditionalFees><PropertyTaxes>
+				4727.0
+</PropertyTaxes><InsuranceCost>
+				1500.0
+</InsuranceCost><ManagementCost>
+				0.0
+</ManagementCost><MaintenanceCost>
+				3000.0
+</MaintenanceCost><Advertising>
+				300.0
+</Advertising><UtilityCosts>
+				0.0
+</UtilityCosts><AppreciationPerYear>
+				2.0
+</AppreciationPerYear><AdditionalTaxes>
+				0.0
+</AdditionalTaxes></Input>
+	<Input id="4"><UserId>
+				1
+</UserId><PropertyAddress>
+				7-9 Church St Foxboro Duplex
+</PropertyAddress><TotalPurchasePrice>
+				250000.0
+</TotalPurchasePrice><DownPayment>
+				200000.0
+</DownPayment><AnticipatedImprovements>
+				0.0
+</AnticipatedImprovements><MortgageInterestRate>
+				4.0
+</MortgageInterestRate><MortgageLengthYears>
+				30.0
+</MortgageLengthYears><MonthlyIncomeRent>
+				2000.0
+</MonthlyIncomeRent><VacancyPercent>
+				10.0
+</VacancyPercent><AdditionalFees>
+				0.0
+</AdditionalFees><PropertyTaxes>
+				4727.0
+</PropertyTaxes><InsuranceCost>
+				1500.0
+</InsuranceCost><ManagementCost>
+				0.0
+</ManagementCost><MaintenanceCost>
+				3000.0
+</MaintenanceCost><Advertising>
+				300.0
+</Advertising><UtilityCosts>
+				0.0
+</UtilityCosts><AppreciationPerYear>
+				2.0
+</AppreciationPerYear><AdditionalTaxes>
+				0.0
+</AdditionalTaxes></Input>
+	<Input id="5"><UserId>
+				1
+</UserId><PropertyAddress>
+				7-9 Church St Foxboro Duplex
+</PropertyAddress><TotalPurchasePrice>
+				250000.0
+</TotalPurchasePrice><DownPayment>
+				200000.0
+</DownPayment><AnticipatedImprovements>
+				0.0
+</AnticipatedImprovements><MortgageInterestRate>
+				4.0
+</MortgageInterestRate><MortgageLengthYears>
+				30.0
+</MortgageLengthYears><MonthlyIncomeRent>
+				2000.0
+</MonthlyIncomeRent><VacancyPercent>
+				10.0
+</VacancyPercent><AdditionalFees>
+				0.0
+</AdditionalFees><PropertyTaxes>
+				4727.0
+</PropertyTaxes><InsuranceCost>
+				1500.0
+</InsuranceCost><ManagementCost>
+				0.0
+</ManagementCost><MaintenanceCost>
+				3000.0
+</MaintenanceCost><Advertising>
+				300.0
+</Advertising><UtilityCosts>
+				0.0
+</UtilityCosts><AppreciationPerYear>
+				2.0
+</AppreciationPerYear><AdditionalTaxes>
+				0.0
+</AdditionalTaxes></Input>
+	<Input id="6"><UserId>
+				1
+</UserId><PropertyAddress>
+				7-9 Church St Foxboro Duplex
+</PropertyAddress><TotalPurchasePrice>
+				250000.0
+</TotalPurchasePrice><DownPayment>
+				200000.0
+</DownPayment><AnticipatedImprovements>
+				0.0
+</AnticipatedImprovements><MortgageInterestRate>
+				4.0
+</MortgageInterestRate><MortgageLengthYears>
+				30.0
+</MortgageLengthYears><MonthlyIncomeRent>
+				2000.0
+</MonthlyIncomeRent><VacancyPercent>
+				10.0
+</VacancyPercent><AdditionalFees>
+				0.0
+</AdditionalFees><PropertyTaxes>
+				4727.0
+</PropertyTaxes><InsuranceCost>
+				1500.0
+</InsuranceCost><ManagementCost>
+				0.0
+</ManagementCost><MaintenanceCost>
+				3000.0
+</MaintenanceCost><Advertising>
+				300.0
+</Advertising><UtilityCosts>
+				0.0
+</UtilityCosts><AppreciationPerYear>
+				2.0
+</AppreciationPerYear><AdditionalTaxes>
+				0.0
+</AdditionalTaxes></Input>
+	<Input id="7"><UserId>
+				1
+</UserId><PropertyAddress>
+				7-9 Church St Foxboro Duplex
+</PropertyAddress><TotalPurchasePrice>
+				250000.0
+</TotalPurchasePrice><DownPayment>
+				200000.0
+</DownPayment><AnticipatedImprovements>
+				0.0
+</AnticipatedImprovements><MortgageInterestRate>
+				4.0
+</MortgageInterestRate><MortgageLengthYears>
+				30.0
+</MortgageLengthYears><MonthlyIncomeRent>
+				2000.0
+</MonthlyIncomeRent><VacancyPercent>
+				10.0
+</VacancyPercent><AdditionalFees>
+				0.0
+</AdditionalFees><PropertyTaxes>
+				4727.0
+</PropertyTaxes><InsuranceCost>
+				1500.0
+</InsuranceCost><ManagementCost>
+				0.0
+</ManagementCost><MaintenanceCost>
+				3000.0
+</MaintenanceCost><Advertising>
+				300.0
+</Advertising><UtilityCosts>
+				0.0
+</UtilityCosts><AppreciationPerYear>
+				2.0
+</AppreciationPerYear><AdditionalTaxes>
+				0.0
+</AdditionalTaxes></Input>
+	<Input id="8"><UserId>
+				1
+</UserId><PropertyAddress>
+				7-9 Church St Foxboro Duplex
+</PropertyAddress><TotalPurchasePrice>
+				250000.0
+</TotalPurchasePrice><DownPayment>
+				200000.0
+</DownPayment><AnticipatedImprovements>
+				0.0
+</AnticipatedImprovements><MortgageInterestRate>
+				4.0
+</MortgageInterestRate><MortgageLengthYears>
+				30.0
+</MortgageLengthYears><MonthlyIncomeRent>
+				2000.0
+</MonthlyIncomeRent><VacancyPercent>
+				10.0
+</VacancyPercent><AdditionalFees>
+				0.0
+</AdditionalFees><PropertyTaxes>
+				4727.0
+</PropertyTaxes><InsuranceCost>
+				1500.0
+</InsuranceCost><ManagementCost>
+				0.0
+</ManagementCost><MaintenanceCost>
+				3000.0
+</MaintenanceCost><Advertising>
+				300.0
+</Advertising><UtilityCosts>
+				0.0
+</UtilityCosts><AppreciationPerYear>
+				2.0
+</AppreciationPerYear><AdditionalTaxes>
+				0.0
+</AdditionalTaxes></Input>
+	</Profile>
+</Application>
