@@ -6,6 +6,18 @@ public class ProfileObject
     private Input input;
     private Integer userId;
 
+    public ProfileObject(Integer id, Input input, Integer userId) {
+        this.id = id;
+        this.input = input;
+        this.userId = userId;
+    }
+
+    public ProfileObject() {
+        this.id = null;
+        this.input = null;
+        this.userId = null;
+    }
+
     public Integer getId() {
         return id;
     }

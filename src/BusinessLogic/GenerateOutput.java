@@ -34,6 +34,8 @@ public class GenerateOutput
         output.setTotalROI(ROI.getReturnOnInvestment());
         output.setNetOperatingIncome(income.getNetOperatingIncome());
 
+
+
         return output;
     }
 }

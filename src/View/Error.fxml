@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="70.0" prefWidth="270.0" style="-fx-background-color: c94545;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXButton fx:id="errorButton" layoutX="109.0" layoutY="44.0" onAction="#errorButtonAction" prefHeight="25.0" prefWidth="48.0" text="OK" />
+      <JFXTextField fx:id="errorMsg"  editable="false" layoutX="65.0" layoutY="10.0" text="Error" />
+   </children>
+</AnchorPane>

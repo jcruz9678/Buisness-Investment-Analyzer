@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import com.jfoenix.controls.*?>
-<?import javafx.geometry.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="769.0" prefWidth="1236.0" style="-fx-background-color: #341961;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.Controller">
+<AnchorPane prefHeight="769.0" prefWidth="1236.0" style="-fx-background-color: #341961;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
     <children>
         <Pane layoutX="9.0" layoutY="8.0" prefHeight="753.0" prefWidth="1219.0" style="-fx-background-color: #101010;">
             <padding>
@@ -34,12 +36,12 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <children>
-                        <JFXTextField editable="false" focusColor="#ededed" />
-                        <JFXTextField editable="false" focusColor="#ededed" GridPane.rowIndex="1" />
-                  <JFXTextField editable="false" focusColor="#ededed" GridPane.rowIndex="3" />
-                  <JFXTextField editable="false" focusColor="#ededed" GridPane.rowIndex="5" />
-                  <JFXTextField editable="false" focusColor="#ededed" GridPane.rowIndex="2" />
-                  <JFXTextField editable="false" focusColor="#ededed" GridPane.rowIndex="4" />
+                        <JFXTextField fx:id="cashFlowM" editable="false" focusColor="#ededed" />
+                        <JFXTextField fx:id="cashFlowY" editable="false" focusColor="#ededed" GridPane.rowIndex="1" />
+                  <JFXTextField fx:id="cashOnCashReturn" editable="false" focusColor="#ededed" GridPane.rowIndex="3" />
+                  <JFXTextField fx:id="netOperatingIncome" editable="false" focusColor="#ededed" GridPane.rowIndex="5" />
+                  <JFXTextField fx:id="capRate" editable="false" focusColor="#ededed" GridPane.rowIndex="2" />
+                  <JFXTextField fx:id="totalROI" editable="false" focusColor="#ededed" GridPane.rowIndex="4" />
                     </children>
                 </GridPane>
                 <GridPane layoutX="46.0" layoutY="102.0" prefHeight="384.0" prefWidth="184.0">
@@ -87,11 +89,6 @@
                   </Label>
                     </children>
                 </GridPane>
-            <JFXButton fx:id="saveprofileOutputButton" buttonType="RAISED" layoutX="518.0" layoutY="697.0" onAction="#saveprofileOutputButtonAction" ripplerFill="#502796" style="-fx-background-color: #9e9b98;" text="Save Profile" textFill="#5e5e5e">
-               <font>
-                  <Font name="Franklin Gothic Medium" size="14.0" />
-               </font>
-            </JFXButton>
             <JFXButton fx:id="backOutputButton" buttonType="RAISED" layoutX="630.0" layoutY="697.0" onAction="#backOutputButtonAction" ripplerFill="#502796" style="-fx-background-color: #9e9b98;" text="Back to Input" textFill="#5e5e5e">
                <font>
                   <Font name="Franklin Gothic Medium" size="14.0" />
@@ -99,10 +96,7 @@
             </JFXButton>
             <GridPane layoutX="792.0" layoutY="395.0" prefHeight="246.0" prefWidth="373.0">
                <children>
-                  <JFXTextField editable="false" focusColor="#ededed" />
-                  <JFXTextField editable="false" focusColor="#ededed" GridPane.rowIndex="1" />
-                  <JFXTextField editable="false" focusColor="#ededed" GridPane.rowIndex="2" />
-                  <JFXTextField editable="false" focusColor="#ededed" GridPane.rowIndex="3" />
+                  <JFXTextField fx:id="monthlyMortgage" editable="false" focusColor="#ededed" GridPane.rowIndex="1" />
                </children>
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -116,22 +110,7 @@
             </GridPane>
             <GridPane layoutX="680.0" layoutY="395.0" prefHeight="246.0" prefWidth="121.0">
                <children>
-                  <Label text="Monthly&#10;Interest Rate" textFill="#5e5e5e">
-                     <font>
-                        <Font name="Franklin Gothic Medium" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label text="Lifetime Interest&#10;Compound" textFill="#5e5e5e" GridPane.rowIndex="1">
-                     <font>
-                        <Font name="Franklin Gothic Medium" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label text="Multiplier" textFill="#5e5e5e" GridPane.rowIndex="2">
-                     <font>
-                        <Font name="Franklin Gothic Medium" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label text="Total Monthly&#10;Mortgage" textFill="#5e5e5e" GridPane.rowIndex="3">
+                  <Label text="Total Monthly&#10;Mortgage" textFill="#5e5e5e" GridPane.rowIndex="1">
                      <font>
                         <Font name="Franklin Gothic Medium" size="14.0" />
                      </font>
@@ -142,19 +121,38 @@
                </columnConstraints>
                <rowConstraints>
                   <RowConstraints maxHeight="115.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="115.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="142.0" minHeight="0.0" prefHeight="62.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="168.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="160.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
                </rowConstraints>
             </GridPane>
+            <JFXTextField fx:id="totalCosts" editable="false" focusColor="#ededed" layoutX="171.0" layoutY="584.0" prefHeight="31.0" prefWidth="288.0" />
+            <Label layoutX="46.0" layoutY="599.0" text="Total Costs" textFill="#5e5e5e">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="cashOutlay" editable="false" focusColor="#ededed" layoutX="171.0" layoutY="518.0" prefHeight="31.0" prefWidth="288.0" />
+            <Label layoutX="46.0" layoutY="526.0" text="Cash Outlay" textFill="#5e5e5e">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="680.0" layoutY="377.0" text="Future Value" textFill="#5e5e5e">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="futureValue" editable="false" focusColor="#ededed" layoutX="787.0" layoutY="372.0" prefHeight="31.0" prefWidth="373.0" />
             </children>
         </Pane>
         <GridPane layoutX="795.0" layoutY="112.0" prefHeight="246.0" prefWidth="373.0">
             <children>
-                <JFXTextField editable="false" focusColor="#ededed" />
-                <JFXTextField editable="false" focusColor="#ededed" GridPane.rowIndex="1" />
-                <JFXTextField editable="false" focusColor="#ededed" GridPane.rowIndex="2" />
-            <JFXTextField editable="false" focusColor="#ededed" GridPane.rowIndex="3" />
+                <JFXTextField fx:id="accrual" editable="false" focusColor="#ededed" />
+                <JFXTextField fx:id="monthlyIncome" editable="false" focusColor="#ededed" GridPane.rowIndex="1" />
+                <JFXTextField fx:id="yearlyIncome" editable="false" focusColor="#ededed" GridPane.rowIndex="2" />
+            <JFXTextField fx:id="totalReturn" editable="false" focusColor="#ededed" GridPane.rowIndex="3" />
             </children>
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -173,12 +171,12 @@
                         <Font name="Franklin Gothic Medium" size="14.0" />
                     </font>
                 </Label>
-                <Label text="Appreciation" textFill="#5e5e5e" GridPane.rowIndex="1">
+                <Label text="Monthly Income" textFill="#5e5e5e" GridPane.rowIndex="1">
                     <font>
                         <Font name="Franklin Gothic Medium" size="14.0" />
                     </font>
                 </Label>
-                <Label text="Taxes" textFill="#5e5e5e" GridPane.rowIndex="2">
+                <Label text="Yearly Income" textFill="#5e5e5e" GridPane.rowIndex="2">
                     <font>
                         <Font name="Franklin Gothic Medium" size="14.0" />
                     </font>

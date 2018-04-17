@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import com.jfoenix.controls.*?>
-<?import javafx.geometry.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="769.0" prefWidth="1236.0" style="-fx-background-color: #341961;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.Controller">
+<AnchorPane prefHeight="769.0" prefWidth="1236.0" style="-fx-background-color: #341961;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Pane layoutX="9.0" layoutY="8.0" prefHeight="753.0" prefWidth="1219.0" style="-fx-background-color: #101010;">
          <padding>
@@ -37,10 +41,10 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <JFXTextField focusColor="#ededed" />
-                  <JFXTextField focusColor="#ededed" GridPane.rowIndex="1" />
-                  <JFXTextField focusColor="#ededed" GridPane.rowIndex="2" />
-                  <JFXTextArea focusColor="#ededed" prefHeight="13.0" prefWidth="288.0" GridPane.rowIndex="3" />
+                  <JFXTextField fx:id="propertyAddress" focusColor="#ededed" />
+                  <JFXTextField fx:id="propertyPrice" focusColor="#ededed" GridPane.rowIndex="1" />
+                  <JFXTextField fx:id="downPayment" focusColor="#ededed" GridPane.rowIndex="2" />
+                  <JFXTextField fx:id="anticipatedImprovements" focusColor="#ededed" prefHeight="13.0" prefWidth="288.0" GridPane.rowIndex="3" />
                </children>
             </GridPane>
             <GridPane layoutX="46.0" layoutY="102.0" prefHeight="272.0" prefWidth="184.0">
@@ -76,19 +80,19 @@
                   </Label>
                </children>
             </GridPane>
-            <JFXComboBox editable="true" focusColor="#ededed" layoutX="171.0" layoutY="397.0" prefHeight="25.0" prefWidth="105.0" />
+            <JFXTextField fx:id="mortgageInterestRate" editable="true" focusColor="#ededed" layoutX="171.0" layoutY="397.0" prefHeight="25.0" prefWidth="105.0" />
             <Label layoutX="46.0" layoutY="394.0" text="Mortgage&#10;Interest Rate" textFill="#5e5e5e">
                <font>
                   <Font name="Franklin Gothic Medium" size="14.0" />
                </font>
             </Label>
-            <JFXTextField focusColor="#ededed" layoutX="171.0" layoutY="440.0" prefHeight="25.0" prefWidth="288.0" />
+            <JFXTextField fx:id="mortgageLengthY" focusColor="#ededed" layoutX="171.0" layoutY="438.0" prefHeight="25.0" prefWidth="288.0" />
             <Label layoutX="46.0" layoutY="437.0" text="Mortgage&#10;Length(Years)" textFill="#5e5e5e">
                <font>
                   <Font name="Franklin Gothic Medium" size="14.0" />
                </font>
             </Label>
-            <JFXTextField focusColor="#ededed" layoutX="171.0" layoutY="513.0" prefHeight="25.0" prefWidth="288.0" />
+            <JFXTextField fx:id="incomingRent" focusColor="#ededed" layoutX="171.0" layoutY="513.0" prefHeight="25.0" prefWidth="288.0" />
             <Label layoutX="46.0" layoutY="510.0" text="Incoming &#10;Rent(Monthly)" textFill="#5e5e5e">
                <font>
                   <Font name="Franklin Gothic Medium" size="14.0" />
@@ -99,13 +103,13 @@
                   <Font name="Franklin Gothic Medium" size="14.0" />
                </font>
             </Label>
-            <JFXComboBox editable="true" focusColor="#ededed" layoutX="171.0" layoutY="551.0" prefHeight="25.0" prefWidth="105.0" />
+            <JFXTextField fx:id="vacancy" editable="true" focusColor="#ededed" layoutX="171.0" layoutY="551.0" prefHeight="25.0" prefWidth="105.0" />
             <Label layoutX="42.0" layoutY="646.0" text="Additional Fees" textFill="#5e5e5e">
                <font>
                   <Font name="Franklin Gothic Medium" size="14.0" />
                </font>
             </Label>
-            <JFXTextArea focusColor="#ededed" layoutX="158.0" layoutY="603.0" prefHeight="59.0" prefWidth="305.0" />
+            <JFXTextField fx:id="additionalFees" focusColor="#ededed" layoutX="158.0" layoutY="603.0" prefHeight="59.0" prefWidth="305.0" />
             <GridPane layoutX="782.0" layoutY="501.0" prefHeight="149.0" prefWidth="373.0">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -115,8 +119,8 @@
                 <RowConstraints maxHeight="92.0" minHeight="10.0" prefHeight="84.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <JFXTextArea focusColor="#ededed" prefHeight="53.0" prefWidth="373.0" />
-                  <JFXTextArea focusColor="#ededed" GridPane.rowIndex="1" />
+                  <JFXTextField fx:id="appreciation" focusColor="#ededed" prefHeight="53.0" prefWidth="373.0" />
+                  <JFXTextField fx:id="additionalTaxes" focusColor="#ededed" GridPane.rowIndex="1" />
                </children>
             </GridPane>
             <GridPane layoutX="682.0" layoutY="514.0" prefHeight="149.0" prefWidth="78.0">
@@ -149,12 +153,12 @@
       </Pane>
       <GridPane layoutX="795.0" layoutY="112.0" prefHeight="362.0" prefWidth="373.0">
          <children>
-            <JFXTextField focusColor="#ededed" />
-            <JFXTextField focusColor="#ededed" GridPane.rowIndex="1" />
-            <JFXTextField focusColor="#ededed" GridPane.rowIndex="2" />
-            <JFXTextArea focusColor="#ededed" prefHeight="13.0" prefWidth="288.0" GridPane.rowIndex="4" />
-            <JFXTextArea focusColor="#ededed" prefHeight="13.0" prefWidth="288.0" GridPane.rowIndex="5" />
-            <JFXTextArea focusColor="#ededed" GridPane.rowIndex="3" />
+            <JFXTextField fx:id="propertyTaxes" focusColor="#ededed" />
+            <JFXTextField fx:id="insurance" focusColor="#ededed" GridPane.rowIndex="1" />
+            <JFXTextField fx:id="propertyManagement" focusColor="#ededed" GridPane.rowIndex="2" />
+            <JFXTextField fx:id="advertising" focusColor="#ededed" prefHeight="13.0" prefWidth="288.0" GridPane.rowIndex="4" />
+            <JFXTextField fx:id="utilities" focusColor="#ededed" prefHeight="13.0" prefWidth="288.0" GridPane.rowIndex="5" />
+            <JFXTextField fx:id="maintenance" focusColor="#ededed" GridPane.rowIndex="3" />
          </children>
          <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -175,7 +179,7 @@
                   <Font name="Franklin Gothic Medium" size="14.0" />
                </font>
             </Label>
-            <Label text="Insurence" textFill="#5e5e5e" GridPane.rowIndex="1">
+            <Label text="Insurance" textFill="#5e5e5e" GridPane.rowIndex="1">
                <font>
                   <Font name="Franklin Gothic Medium" size="14.0" />
                </font>
