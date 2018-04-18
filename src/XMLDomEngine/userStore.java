@@ -31,7 +31,6 @@ public class userStore {
             Document doc = builder.parse(fileName);
             // get the list of all the users in the application
             NodeList userList = doc.getElementsByTagName("User");
-
             for(int i = 0; i < userList.getLength(); i++)
             {
                 Node u = userList.item(i);

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="272.0" prefWidth="578.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXTextField fx:id="messageText" layoutX="97.0" layoutY="61.0" prefHeight="75.0" prefWidth="385.0" />
+      <JFXButton layoutX="289.0" layoutY="206.0" onAction="#clickedYes" text="Yes" />
+      <JFXButton layoutX="332.0" layoutY="206.0" onAction="#clickedNo" text="No" />
+      <Label fx:id="messageTitle" layoutX="97.0" layoutY="51.0" prefHeight="21.0" prefWidth="177.0" />
+   </children>
+</AnchorPane>

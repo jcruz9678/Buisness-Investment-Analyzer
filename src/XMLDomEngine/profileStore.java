@@ -108,9 +108,12 @@ public class profileStore {
                                 }
 
                             }
+                            if(input.getPropertyAddress() != null)
+                            {
+                                profileObject.setInput(input);
+                                returnObject.add(profileObject);
+                            }
 
-                            profileObject.setInput(input);
-                            returnObject.add(profileObject);
 
                         }
                     }

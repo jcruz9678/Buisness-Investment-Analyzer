@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXComboBox?>
-<?import com.jfoenix.controls.JFXTextArea?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
@@ -147,6 +145,11 @@
             <JFXButton fx:id="calcInputButton" buttonType="RAISED" layoutX="563.0" layoutY="701.0" onAction="#calcInputButtonAction" ripplerFill="#502796" style="-fx-background-color: #9e9b98;" text="Calculate" textFill="#5e5e5e">
                <font>
                   <Font name="Franklin Gothic Medium" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="saveprofileOutputButton" buttonType="RAISED" layoutX="877.0" layoutY="38.0" onAction="#saveprofileOutputButtonAction" ripplerFill="#502796" style="-fx-background-color: #9e9b98;" text="Save Profile" textFill="#5e5e5e">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
                </font>
             </JFXButton>
          </children>

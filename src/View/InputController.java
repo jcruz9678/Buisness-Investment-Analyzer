@@ -4,6 +4,7 @@ import BusinessLogic.GenerateOutput;
 import Entity.Input;
 import Entity.Output;
 import Entity.ProfileObject;
+import XMLDomEngine.profileStore;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -163,6 +164,27 @@ public class InputController implements Initializable {
                 stage.show();
                 ((Node)(event.getSource())).getScene().getWindow().hide();
             }
+            else
+            {
+                //Error
+                Parent root;
+                try {
+                    FXMLLoader fxmlLoader = new FXMLLoader();
+                    fxmlLoader.setLocation(getClass().getResource("Error.fxml"));
+                    ErrorController controller = new ErrorController();
+                    controller.setMessage("Cannot have empty fields.");
+                    fxmlLoader.setController(controller);
+                    root = fxmlLoader.load();
+
+                    Stage stage = new Stage();
+                    stage.setTitle("Error");
+                    stage.setScene(new Scene(root, 270, 70));
+                    stage.show();
+                }catch (IOException e)
+                {
+                    e.printStackTrace();
+                }
+            }
 
         }
         catch (IOException e) {
@@ -181,8 +203,10 @@ public class InputController implements Initializable {
             fxmlLoader.setController(controller);
             root = fxmlLoader.load();
             Stage stage = new Stage();
-            stage.setTitle("Input");
-            stage.setScene(new Scene(root, 1236, 769));
+            stage.setTitle("Profiles");
+            stage.setScene(new Scene(root, 567, 635));
+            stage.show();
+            ((Node)(event.getSource())).getScene().getWindow().hide();
         }
         catch (IOException e) {
             e.printStackTrace();
@@ -201,6 +225,7 @@ public class InputController implements Initializable {
             stage.setScene(new Scene(root, 595, 422));
             stage.show();
             ((Node)(event.getSource())).getScene().getWindow().hide();
+
         }
         catch (IOException e) {
             e.printStackTrace();
@@ -208,6 +233,112 @@ public class InputController implements Initializable {
     }
     public void saveprofileOutputButtonAction(ActionEvent event) {
         //On button click, Save the users results
+        if(setInputObject())
+        {
+            profileStore store = new profileStore();
+            ProfileObject profile = new ProfileObject();
+            profile.setInput(input);
+            profile.setUserId(userId);
+            profile.setId(store.getMaxProfileId() + 1);
 
+
+            String messageTitle = "Save Profile";
+            String message = "Are you sure you want to save this profile?";
+
+
+            Parent root;
+            try {
+
+                FXMLLoader fxmlLoader = new FXMLLoader();
+                fxmlLoader.setLocation(getClass().getResource("Message.fxml"));
+                MessageController controller = new MessageController(profile,message, messageTitle);
+                fxmlLoader.setController(controller);
+                root = fxmlLoader.load();
+                Stage stage = new Stage();
+                stage.setTitle("Message");
+                stage.setScene(new Scene(root, 578, 272));
+                stage.show();
+            }
+            catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        else
+        {
+            //Error
+            Parent root;
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader();
+                fxmlLoader.setLocation(getClass().getResource("Error.fxml"));
+                ErrorController controller = new ErrorController();
+                controller.setMessage("Cannot have empty fields.");
+                fxmlLoader.setController(controller);
+                root = fxmlLoader.load();
+
+                Stage stage = new Stage();
+                stage.setTitle("Error");
+                stage.setScene(new Scene(root, 270, 70));
+                stage.show();
+            }catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+
+
+    }
+
+    private boolean setInputObject()
+    {
+        ArrayList<JFXTextField> textfields = new ArrayList<JFXTextField>();
+        textfields.add(propertyAddress);
+        textfields.add(propertyPrice);
+        textfields.add(downPayment);
+        textfields.add(anticipatedImprovements);
+        textfields.add(mortgageInterestRate);
+        textfields.add(mortgageLengthY);
+        textfields.add(incomingRent);
+        textfields.add(vacancy);
+        textfields.add(additionalFees);
+        textfields.add(appreciation);
+        textfields.add(additionalTaxes);
+        textfields.add(propertyTaxes);
+        textfields.add(insurance);
+        textfields.add(propertyManagement);
+        textfields.add(advertising);
+        textfields.add(utilities);
+        textfields.add(maintenance);
+
+        boolean emptyTextField = true;
+        for(int i = 0; i < textfields.size(); i++)
+        {
+            if(textfields.get(i).getText() == null || textfields.get(i).getText().isEmpty())
+            {
+                emptyTextField = false;
+            }
+        }
+
+        if(emptyTextField)
+        {
+            input.setPropertyAddress(propertyAddress.getText());
+            input.setTotalPurchasePrice(Double.parseDouble(propertyPrice.getText()));
+            input.setDownPayment(Double.parseDouble(downPayment.getText()));
+            input.setAnticipatedImprovements(Double.parseDouble(anticipatedImprovements.getText()));
+            input.setMortgageInterestRate(Double.parseDouble(mortgageInterestRate.getText()));
+            input.setMortgageLengthYears(Double.parseDouble(mortgageLengthY.getText()));
+            input.setMonthlyIncomeRent(Double.parseDouble(incomingRent.getText()));
+            input.setVacancyPercent(Double.parseDouble(vacancy.getText()));
+            input.setAdditionalFees(Double.parseDouble(additionalFees.getText()));
+            input.setAppreciationPerYear(Double.parseDouble(appreciation.getText()));
+            input.setAdditionalTaxes(Double.parseDouble(additionalTaxes.getText()));
+            input.setPropertyTaxes(Double.parseDouble(propertyTaxes.getText()));
+            input.setInsuranceCost(Double.parseDouble(insurance.getText()));
+            input.setManagementCost(Double.parseDouble(propertyManagement.getText()));
+            input.setAdvertising(Double.parseDouble(advertising.getText()));
+            input.setUtilityCosts(Double.parseDouble(utilities.getText()));
+            input.setMaintenanceCost(Double.parseDouble(maintenance.getText()));
+        }
+
+        return emptyTextField;
     }
 }
